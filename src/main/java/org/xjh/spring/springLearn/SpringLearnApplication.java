@@ -1,4 +1,4 @@
-package org.xjh.spring.springlearn;
+package org.xjh.spring.springLearn;
 
 public class SpringLearnApplication {
 
