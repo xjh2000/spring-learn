@@ -7,13 +7,13 @@ import org.xjh.spring.springLearn.service.BookService;
 public class App1 {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        BookDao bookDao = (BookDao) context.getBean("bookDao");
+        BookDao bookDao = (BookDao) context.getBean(BookDao.class);
         bookDao.save();
 
         System.out.println("===========");
         System.out.println("===========");
 
-        BookService bookService = (BookService) context.getBean("bookService");
+        BookService bookService = (BookService) context.getBean(BookService.class);
         bookService.save();
     }
 }
