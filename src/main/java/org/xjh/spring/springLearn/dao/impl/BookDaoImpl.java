@@ -1,6 +1,6 @@
-package org.xjh.spring.springlearn.dao.impl;
+package org.xjh.spring.springLearn.dao.impl;
 
-import org.xjh.spring.springlearn.dao.BookDao;
+import org.xjh.spring.springLearn.dao.BookDao;
 
 public class BookDaoImpl implements BookDao {
     @Override

@@ -1,4 +1,4 @@
-package org.xjh.spring.springlearn.service;
+package org.xjh.spring.springLearn.service;
 
 public interface BookService {
     void save();

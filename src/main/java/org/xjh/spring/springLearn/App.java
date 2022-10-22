@@ -1,8 +1,8 @@
-package org.xjh.spring.springlearn;
+package org.xjh.spring.springLearn;
 
-import org.xjh.spring.springlearn.service.impl.BookServiceImpl;
+import org.xjh.spring.springLearn.service.impl.BookServiceImpl;
 
-public class SpringLearnApplication {
+public class App {
 
     public static void main(String[] args) {
         BookServiceImpl bookService = new BookServiceImpl();
