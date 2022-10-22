@@ -15,6 +15,5 @@ public class App1 {
 
         BookService bookService = (BookService) context.getBean("bookService");
         bookService.save();
-
     }
 }

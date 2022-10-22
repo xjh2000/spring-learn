@@ -3,8 +3,6 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="bookDao" class="org.xjh.spring.springLearn.dao.impl.BookDaoImpl"></bean>
-    <bean id="bookService" class="org.xjh.spring.springLearn.service.impl.BookServiceImpl">
-        <property name="bookDao" ref="bookDao"/>
-    </bean>
+    <bean id="bookService" class="org.xjh.spring.springLearn.service.impl.BookServiceImpl" autowire="byType"/>
 
 </beans>
