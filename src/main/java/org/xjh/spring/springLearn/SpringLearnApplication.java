@@ -1,9 +1,13 @@
 package org.xjh.spring.springLearn;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class SpringLearnApplication {
 
     public static void main(String[] args) {
-        System.out.println("Holle world");
+        SpringApplication.run(SpringLearnApplication.class, args);
     }
 
 }
