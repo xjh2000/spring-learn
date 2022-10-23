@@ -1,25 +1,21 @@
 package org.xjh.spring.springLearn.config;
 
-import org.springframework.web.context.WebApplicationContext;
-import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
-import org.springframework.web.servlet.support.AbstractDispatcherServletInitializer;
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class ServletContainersInitConfig extends AbstractDispatcherServletInitializer {
+public class ServletContainersInitConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
+
     @Override
-    protected WebApplicationContext createServletApplicationContext() {
-        AnnotationConfigWebApplicationContext applicationContext = new AnnotationConfigWebApplicationContext();
-        applicationContext.register(SpringMvcConfig.class);
-        applicationContext.refresh();
-        return applicationContext;
+    protected Class<?>[] getRootConfigClasses() {
+        return new Class[]{SpringConfig.class};
+    }
+
+    @Override
+    protected Class<?>[] getServletConfigClasses() {
+        return new Class[]{SpringMvcConfig.class};
     }
 
     @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};
-    }
-
-    @Override
-    protected WebApplicationContext createRootApplicationContext() {
-        return null;
     }
 }
